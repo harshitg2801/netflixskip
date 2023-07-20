@@ -1,2 +1,2 @@
 # netflixskip
-don't want to watch intro again &amp; again !
+don't  watch intro again &amp; again !
