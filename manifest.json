@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "Netflix Skip Intro",
+    "description": "Automatically skip intro when available",
+    "version": "1.2",
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.netflix.com/watch/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "*://www.netflix.com/watch/*", "tabs", "webNavigation"
+    ]
+}
